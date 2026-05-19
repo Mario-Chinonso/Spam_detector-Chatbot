@@ -15,7 +15,7 @@ def clean_text(text):
     return text
 
 # To apply a function to your dataset use the .apply() keyword
-df["text"] = f["text"].apply(clean_text)
+df["text"] = df["text"].apply(clean_text)
 
 #   AI Create a dictionary and Convert words to numbers
 X = vectorizer.fit_transform(df["text"])
